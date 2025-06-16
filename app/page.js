@@ -74,7 +74,7 @@ export default function index() {
         </section>
         ))}</>}
 
-      <Footer />
+      <Footer/>
     </div>
   );
 }
