@@ -10,7 +10,7 @@ import Footer from './component/Footer';
 import Home from './component/Links/Home';
 import Technology from './component/Links/Technology';
 
-export default function index() {
+export default function Index() {
   const [isLoading, setisLoading] = useState(false)
   const [activeLink, setActiveLink] = useState('home');
 
