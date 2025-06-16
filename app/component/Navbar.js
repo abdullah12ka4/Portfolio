@@ -2,6 +2,7 @@
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import Link from "next/link";
 import { useState } from "react";
+import { Image } from 'next/image';
 
 export default function Navbar({ activeLink }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,11 +56,9 @@ export default function Navbar({ activeLink }) {
         <div
           className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-50 sm:hidden flex flex-col items-center pt-20 gap-5 transition-all duration-300"
         >
-          <img
-            src="profile.jpg"
+         <Image  src="profile.jpg"
             className="h-20 w-20 object-cover rounded-full"
-            alt="Profile"
-          />
+            alt="Profile" />
           {navLinks.map((link) => (
             <Link
               key={link.path}
