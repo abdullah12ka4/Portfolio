@@ -21,12 +21,12 @@ export default function Navbar({ activeLink }) {
       <nav className="sticky top-0 z-50 border-b border-gray-800 bg-gray-950 px-6 py-2 h-12">
         <div className="flex justify-between items-center">
           <div className="logo">
-            <a className="uppercase" href="/">
+            <Link className="uppercase" href="/">
               <span className="text-blue-600 text-[12px] sm:text-xl font-bold">&lt;</span>
               <span className="text-[12px] sm:text-xl font-bold">Port</span>
               <span className="text-green-600 text-[12px] sm:text-xl font-bold">folio</span>
               <span className="text-blue-600 text-[12px] sm:text-xl font-bold">/&gt;</span>
-            </a>
+            </Link>
           </div>
           <div className="hidden sm:flex gap-5">
             {navLinks.map((link) => (
