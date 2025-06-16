@@ -18,7 +18,7 @@ export default function Home() {
       >
         <p className="text-sm text-yellow-400 uppercase">Welcome to my portfolio</p>
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-          Hi, I&#39;m <span className="text-yellow-400">Abdullah</span>
+          {`Hi, I'm `}<span className="text-yellow-400">Abdullah</span>
         </h1>
         <p className="text-gray-400 text-lg">
           A passionate Frontend & MERN Stack Developer crafting dynamic and responsive web applications using React.js & Next.js.

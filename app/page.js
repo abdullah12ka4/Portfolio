@@ -10,11 +10,13 @@ import Footer from './component/Footer';
 import Home from './component/Links/Home';
 import Technology from './component/Links/Technology';
 
+const sections = ['home', 'about', 'projects','technology', 'services', 'contact'];
+
 export default function Page() {
   const [isLoading, setisLoading] = useState(false)
   const [activeLink, setActiveLink] = useState('home');
 
-  const sections = ['home', 'about', 'projects','technology', 'services', 'contact'];
+
   const refs = useRef({});
 
   // Assign refs dynamically
