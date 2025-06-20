@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiTailwindcss, SiJavascript, SiExpress } from "react-icons/si";
 
-const techStack = [
+// Tech stack array
+const tech = [
   { name: "React", icon: <FaReact className="text-blue-500" /> },
   { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
@@ -18,46 +19,23 @@ const techStack = [
 ];
 
 export default function Technology() {
-  return (
-    <section className="pb-4 text-white px-4 sm:px-8">
-      <motion.h2
-        className="text-3xl font-bold text-center mb-10"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        Technologies I Work With
-      </motion.h2>
 
-      <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 max-w-4xl mx-auto"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={{
-          hidden: {},
-          visible: {
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
-        }}
-      >
-        {techStack.map((tech, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center h-56 sm:h-64 sm:w-56 justify-center bg-gray-800 p-4 rounded-xl hover:bg-gray-700 transition shadow-md"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15
-            }}
-          >
-            <div className=" text-[150px] mb-2">{tech.icon}</div>
-            <p className="text-2xl font-medium text-center">{tech.name}</p>
+  return (
+    <section className="flex flex-col p-8 pb-20 gap-10 justify-center bg-[#0e0e1b] text-white">
+      <h1 className="text-3xl font-bold uppercase text-center mb-4">
+        Technologies I Work With
+      </h1>
+      <div className="flex flex-col sm:flex-row gap-5 overflow-x-auto overflow-y-hidden pb-5">
+        {tech.map((t, index)=>(
+          <motion.div key={index}  initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.15 }}className="flex flex-col gap-5 items-center bg-gray-600 rounded-md p-14">
+            <div className="text-[200px] sm:text-[300px]">{t.icon}</div>
+            <h1 className="text-2xl font-semibold">{t.name}</h1>
           </motion.div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }
