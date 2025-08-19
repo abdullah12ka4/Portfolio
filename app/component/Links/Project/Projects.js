@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const ProjectData = [
     {
+      title: "Resume Generator",
+      description:
+        "A secure Resume Generator used to generate resume for yourself",
+      imageUrl: "/resume_generator.png",
+      tech: ["React", "Tailwind", "Style Component"],
+      liveLink: "https://resume-generator-orpin.vercel.app/",
+      githubLink: "https://github.com/abdullah12ka4/ResumeGenerator",
+    },
+    {
       title: "PassOP - Password Manager",
       description:
         "A secure password manager built with React and localStorage. Easily store, view, copy, and manage your site credentials.",
