@@ -8,9 +8,9 @@ export default function Projects() {
       description:
         "A secure Resume Generator used to generate resume for yourself",
       imageUrl: "/resume_generator.png",
-      tech: ["React", "Tailwind", "Style Component"],
-      liveLink: "https://resume-generator-orpin.vercel.app/",
-      githubLink: "https://github.com/abdullah12ka4/ResumeGenerator",
+      tech: ["React", "Tailwind", "Style Component", "React-Pdf"],
+      liveLink: "https://cv-generator-theta-flame.vercel.app/",
+      githubLink: "https://github.com/abdullah12ka4/CVGenerator",
     },
     {
       title: "PassOP - Password Manager",
